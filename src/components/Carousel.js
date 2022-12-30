@@ -44,7 +44,7 @@ const Carousel = ({ carouselList }) => {
       {carouselList.map((pack, packIndex) => {
         const { imgURL, shortDescription, imgDescription } = pack.mainPackage;
         const destination = pack.destination;
-        const path = `packages/${pack.destination}`;
+        const path = `/packages/${pack.destination}`;
         let position = "nextSlide";
 
         if (packIndex === index) {
