@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {
+  About,
+  Cancellation,
+  Contact,
+  Domestic,
+  Error,
+  Home,
+  International,
+  Packages,
+  Privacy,
+  SharedLayout,
+} from "./pages";
+import { ScrollToTop } from "./components";
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <ScrollToTop />
+      <Routes>
+        <Route path='/' element={<SharedLayout />}>
+          <Route index element={<Home />} />
+          <Route path='packages/:packageName' element={<Packages />} />
+          <Route path='aboutUs' element={<About />} />
+          <Route path='contactUs' element={<Contact />} />
+          <Route path='cancelation-policy' element={<Cancellation />} />
+          <Route path='privacy-policy' element={<Privacy />} />
+          <Route path='domestic-packages' element={<Domestic />} />
+          <Route path='international-packages' element={<International />} />
+        </Route>
+        <Route path='*' element={<Error />} />
+      </Routes>
+    </BrowserRouter>
   );
-}
-
+};
 export default App;

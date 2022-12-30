@@ -1,0 +1,21 @@
+<svg width="193" height="58" viewBox="0 0 193 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_bd_0_1)">
+<text fill="black" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="24" font-weight="600" letter-spacing="0.05em"><tspan x="98.1547" y="23.2273"> </tspan></text>
+<text fill="#721CFF" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="24" font-weight="600" letter-spacing="0.05em"><tspan x="105.308" y="23.2273">Town </tspan><tspan x="42.0969" y="52.2273">Holidays</tspan></text>
+<text fill="white" xml:space="preserve" style="white-space: pre" font-family="Inter" font-size="24" font-weight="600" letter-spacing="0.05em"><tspan x="20.0094" y="23.2273">Travel</tspan></text>
+</g>
+<defs>
+<filter id="filter0_bd_0_1" x="16.9639" y="1.54546" width="157.284" height="63.3636" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImageFix" stdDeviation="2"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_0_1"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="effect1_backgroundBlur_0_1" result="effect2_dropShadow_0_1"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_0_1" result="shape"/>
+</filter>
+</defs>
+</svg>
