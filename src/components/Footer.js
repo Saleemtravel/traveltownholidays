@@ -134,7 +134,7 @@ const Footer = () => {
 };
 
 const Wrapper = styled.footer`
-  padding: 2rem;
+  padding: 2rem 1rem;
   width: 100%;
   display: grid;
   row-gap: 1.25rem;
