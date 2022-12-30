@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import formatter from "../utils/formatter";
+import { ImLocation2 } from "react-icons/im";
+import { HiCalendarDays } from "react-icons/hi2";
+import { BiDetail } from "react-icons/bi";
 const PackageCard = ({
   name,
   price,
@@ -22,9 +25,18 @@ const PackageCard = ({
           <h3>{destination || name}</h3>
           <p className='price'>{`${formatter.format(price)}/- PP`}</p>
         </header>
-        <p>{places}</p>
-        <p>{days}</p>
-        <p>{shortDescription}</p>
+        <p>
+          <ImLocation2 className='icon' />
+          {places}
+        </p>
+        <p>
+          <HiCalendarDays className='icon' />
+          {days}
+        </p>
+        <p>
+          <BiDetail className='icon' />
+          {shortDescription}
+        </p>
         {path && (
           <footer className='card-footer'>
             <Link to={path} className='btn link'>

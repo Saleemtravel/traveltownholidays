@@ -12,6 +12,7 @@ const ModalForm = () => {
 
   if (state.succeeded) {
     form.current.reset();
+    closeModalForm();
   }
   return (
     <Wrapper>

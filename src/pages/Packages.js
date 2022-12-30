@@ -5,6 +5,8 @@ import { Accordion, ModalForm, PackageCard } from "../components";
 import { useEffect } from "react";
 import { useAppContext } from "../context/appContext";
 import formatter from "../utils/formatter";
+import { ImLocation2 } from "react-icons/im";
+import { HiCalendarDays } from "react-icons/hi2";
 
 const Packages = () => {
   const { packageName } = useParams();
@@ -33,10 +35,16 @@ const Packages = () => {
           <div className='details-container'>
             <div className='details'>
               <h1>{name}</h1>
-              <p>{places}</p>
+              <p>
+                <ImLocation2 className='icon' />
+                {places}
+              </p>
               <div className='flex'>
                 <p className='price'>{`${formatter.format(price)}/- PP`}</p>
-                <p>{days}</p>
+                <p>
+                  <HiCalendarDays className='icon' />
+                  {days}
+                </p>
                 <button className='btn' onClick={openModalForm}>
                   enquir now
                 </button>
@@ -174,7 +182,7 @@ const Wrapper = styled.main`
     bottom: 0;
     left: 0;
     width: 100%;
-    padding: 0.1rem 2rem;
+    padding: 0.1rem 0;
   }
   .details {
     color: var(--white);
@@ -221,13 +229,12 @@ const Wrapper = styled.main`
     display: block;
     width: unset;
   }
-  .tabList-container {
-  }
+
   .tabList {
     max-width: var(--max-width);
     margin: 0 auto;
     position: sticky;
-    top: 1rem;
+    top: 0;
     padding: 0.25rem;
     border-radius: var(--borderRadius);
     transition: var(--transition);
@@ -247,6 +254,10 @@ const Wrapper = styled.main`
     }
   }
   @media screen and (min-width: 560px) {
+    .details-container {
+      padding: 0.1rem 2rem;
+    }
+
     .details {
       h1 {
         font-size: 3.052rem;

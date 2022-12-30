@@ -371,6 +371,13 @@ textarea:focus {
   object-fit: fill;
 }
 
+.icon {
+  color: var(--primary-500);
+  font-size: 1.2rem;
+  margin-right: 0.2rem;
+  margin-bottom: -0.15rem;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -424,6 +431,7 @@ textarea:focus {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 /* links */
