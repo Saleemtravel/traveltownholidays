@@ -14,8 +14,14 @@ const ModalForm = () => {
     form.current.reset();
     closeModalForm();
   }
+  const handleFormClosure = (e) => {
+    if (e.target.classList.contains("form-Wrapper")) {
+      closeModalForm();
+    }
+  };
+
   return (
-    <Wrapper>
+    <Wrapper onClick={handleFormClosure} className={"form-Wrapper"}>
       <form onSubmit={handleSubmit} ref={form}>
         <div className='formtitle'>
           <h4>Kindly submit the details</h4>

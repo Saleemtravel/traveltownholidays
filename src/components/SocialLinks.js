@@ -10,7 +10,7 @@ const SocialLinks = ({ className }) => {
           target='_blank'
           rel='noreferrer'
         >
-          <BsInstagram />
+          <BsInstagram className='contact-icon' />
         </a>
       </li>
       <li>
@@ -20,7 +20,7 @@ const SocialLinks = ({ className }) => {
           target='_blank'
           rel='noreferrer'
         >
-          <BsFacebook />
+          <BsFacebook className='contact-icon' />
         </a>
       </li>
       <li>
@@ -30,7 +30,7 @@ const SocialLinks = ({ className }) => {
           target='_blank'
           rel='noreferrer'
         >
-          <BsWhatsapp />
+          <BsWhatsapp className='contact-icon' />
         </a>
       </li>
     </ul>

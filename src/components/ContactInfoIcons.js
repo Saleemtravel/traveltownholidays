@@ -9,19 +9,19 @@ const ContactInfoIcons = ({ className }) => {
       <ul>
         <li>
           <a aria-label='email' href='mailto:info@traveltownholidays.com'>
-            <MdEmail />
+            <MdEmail className='contact-icon' />
           </a>
         </li>
         <li>
           <a aria-label='telephone' href='tel:+919686879898'>
-            <BsFillTelephoneForwardFill />
+            <BsFillTelephoneForwardFill className='contact-icon' />
           </a>
         </li>
-        <li>
+        {/* <li>
           <a aria-label='telephone' href='tel:+918971882060'>
-            <BsFillTelephoneForwardFill />
+            <BsFillTelephoneForwardFill className='contact-icon' />
           </a>
-        </li>
+        </li> */}
       </ul>
       <SocialLinks />
     </Wrapper>

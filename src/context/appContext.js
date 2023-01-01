@@ -10,7 +10,7 @@ const AppProvider = ({ children }) => {
   const [location, setLocation] = useState({});
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isModalFormOpen, setIsModalFormOpen] = useState(false);
-
+  const [showContact, setShowContact] = useState(false);
   const openModalForm = () => {
     setIsModalOpen(true);
   };
@@ -104,6 +104,8 @@ const AppProvider = ({ children }) => {
         getCarouselList,
         getDomesticPackagesAll,
         getInternationalPackagesAll,
+        showContact,
+        setShowContact,
       }}
     >
       {children}

@@ -6,13 +6,19 @@ import Logo from "./Logo";
 import styled from "styled-components";
 import { useAppContext } from "../context/appContext";
 
-const Sidebar = ({ className }) => {
+const Sidebar = () => {
   const { setIsSidebarOpen } = useAppContext();
   const closeSideBar = () => {
     setIsSidebarOpen(false);
   };
+
+  const handleSidebarClosure = (e) => {
+    if (e.target.classList.contains("sidebar-Wrapper")) {
+      closeSideBar();
+    }
+  };
   return (
-    <Wrapper className={className}>
+    <Wrapper onClick={handleSidebarClosure} className={"sidebar-Wrapper"}>
       <nav>
         <div className='asideNavTitle'>
           <NavLink to='/' onClick={closeSideBar}>

@@ -147,10 +147,16 @@ const Wrapper = styled.nav`
   .icon-btn {
     font-size: 1.5rem;
     animation: ${scale} 1s infinite;
-    background: transparent;
+    background: var(--primary-200);
     border: none;
     cursor: pointer;
     color: var(--grey-800);
+    position: fixed;
+    right: 1rem;
+    top: 2rem;
+    border-radius: var(--borderRadius);
+    padding: 0.25rem;
+    z-index: 300;
   }
   ul {
     display: none;

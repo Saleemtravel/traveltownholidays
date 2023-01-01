@@ -53,14 +53,14 @@ const FormContent = ({ state }) => {
         />
         <FormRow
           name={"fromDate"}
-          labelText={"from data"}
+          labelText={"from date"}
           type={"date"}
           state={state}
         />
       </div>
       <FormRow
-        name={"spceialArragments"}
-        labelText={"spceial Arragments"}
+        name={"specialArrangements"}
+        labelText={"Special Arrangements"}
         textarea={true}
         state={state}
         placeholder={"Tell us more about your requirments....."}

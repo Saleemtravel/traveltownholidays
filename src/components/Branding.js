@@ -1,22 +1,23 @@
 import styled, { keyframes } from "styled-components";
 import ContactInfoIcons from "./ContactInfoIcons";
 import { GrContactInfo } from "react-icons/gr";
-import { useState } from "react";
+import { useAppContext } from "../context/appContext";
 
 const Branding = () => {
-  const [showContact, setShowContact] = useState(false);
+  const { showContact, setShowContact } = useAppContext();
   return (
     <Wrapper>
       <ContactInfoIcons
-        className={` ${showContact ? "social-icons-show" : null}`}
+        className={` ${showContact ? "social-icons-show " : null}`}
       />
 
       <button
         type='button'
+        className='contact-icon'
         onClick={() => setShowContact(!showContact)}
         aria-label='open social links list'
       >
-        <GrContactInfo className={"icon"} />
+        <GrContactInfo className={"icon contact-icon"} />
       </button>
     </Wrapper>
   );
@@ -41,6 +42,8 @@ const Wrapper = styled.aside`
   margin-left: 1rem;
   bottom: 0;
   left: 0;
+  transition: var(--transition);
+
   button {
     background: var(--primary-800);
     width: 3rem;

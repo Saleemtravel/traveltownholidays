@@ -66,35 +66,34 @@ const Cancellation = () => {
                 <td>
                   Clear 45 working days or more prior to the date of departure
                   of the Tour or for non-payment of the balance Tour Cost
-                  Booking Amount
                 </td>
                 <td>Booking Amount</td>
               </tr>
               <tr>
                 <td>
                   Clear 44 to 31 working days prior to the date of departure of
-                  the Tour. 30% of Tour Cost
+                  the Tour.
                 </td>
                 <td>30% of Tour Cost</td>
               </tr>
               <tr>
                 <td>
                   Clear 30 to 16 working days prior to the date of departure of
-                  the Tour. 40% of Tour Cost
+                  the Tour.
                 </td>
                 <td>40% of Tour Cost</td>
               </tr>
               <tr>
                 <td>
                   Clear 15 to 07 working days prior to the date of departure of
-                  the Tour 50% of Tour Cost
+                  the Tour.
                 </td>
                 <td>50% of Tour Cost</td>
               </tr>
               <tr>
                 <td>
                   Less than 07 clear working days prior to the date of departure
-                  of the Tour. 100% of Tour Cost
+                  of the Tour.
                 </td>
                 <td>100% of Tour Cost</td>
               </tr>
@@ -103,7 +102,7 @@ const Cancellation = () => {
                   FOR TOURS WITH CRUISE Less than clear 80 - 50 working days
                   (depending on the cancellation policy of the particular cruise
                   liner) prior to the date of the departure of the tour for the
-                  Cruise portion. 100%
+                  Cruise portion.
                 </td>
                 <td>100%</td>
               </tr>
@@ -111,7 +110,7 @@ const Cancellation = () => {
                 <td>
                   FOR HOTELS Less than clear 15 working days or depending on the
                   cancellation policy of the particular hotel prior to the date
-                  of the departure of the tour for the Hotel. 100%
+                  of the departure of the tour for the Hotel.
                 </td>
                 <td>100%</td>
               </tr>

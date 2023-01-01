@@ -9,11 +9,18 @@ import {
   ModalForm,
 } from "../components";
 import { useAppContext } from "../context/appContext";
+
 const SharedLayout = ({ children }) => {
-  const { isSidebarOpen, isModalOpen } = useAppContext();
+  const { isSidebarOpen, isModalOpen, setShowContact } = useAppContext();
+
+  const handleBodyClick = (e) => {
+    if (!e.target.classList.contains("contact-icon")) {
+      setShowContact(false);
+    }
+  };
 
   return (
-    <div>
+    <div onClick={handleBodyClick}>
       <header>
         <Navbar />
         <Submenu />
