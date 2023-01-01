@@ -156,7 +156,7 @@ const Wrapper = styled.nav`
     top: 2rem;
     border-radius: var(--borderRadius);
     padding: 0.25rem;
-    z-index: 199;
+    z-index: 50;
   }
   ul {
     display: none;
